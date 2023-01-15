@@ -2821,6 +2821,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                quoted: fkontak
             })
             break
+         case 'h':
          case 'hidetag':
             if (!m.isGroup) return reply(lang.groupOnly())
             if (!(isGroupAdmins || isGroupOwner)) return reply(lang.adminOnly())
